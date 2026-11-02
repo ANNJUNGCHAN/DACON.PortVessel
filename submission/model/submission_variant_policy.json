@@ -1,0 +1,12 @@
+{
+  "variant_id": "V18_T6_DE",
+  "description": "T6x2+C+N frozen ranker recipe followed by the shipped three-encoder Hangul DE at t=1.0",
+  "source_zip_sha256": "639475a4afa79aa39168d89b2138a942a103413e3a4f71466392c40805665ceb",
+  "model_artifact_sha256": "385921b4b2f766e6d356ede4534c3233c2ba26955d3195be17471981de992f74",
+  "model_weights_changed": false,
+  "candidate_generation_changed": false,
+  "feature_columns_changed": false,
+  "de_threshold": 1.0,
+  "llm_added": false,
+  "official_upload_performed": false
+}

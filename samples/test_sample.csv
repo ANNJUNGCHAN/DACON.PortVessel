@@ -1,0 +1,4 @@
+﻿sample_id,vessel_name,call_sign,gross_tonnage,international_gross_tonnage,flag_name,vessel_type,arrival_year
+SAMPLE_TEST_0101,블루 하버 파이오니어,CS_SAMPLE0000000000101,29800,29800,파나마,석유제품 운반선,2025
+SAMPLE_TEST_0102,STELLAR KYTE,CS_SAMPLE0000000000003,27100,27100,마샬 제도,컨테이너선,2025
+SAMPLE_TEST_0103,오션메이플글로리,,44500,44500,라이베리아,산물선(벌크선),2026

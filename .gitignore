@@ -1,0 +1,26 @@
+# 대회 데이터는 재배포 금지: 어떤 경로에서도 커밋하지 않는다.
+data/
+*.csv
+!samples/*.csv
+!results/*.csv
+
+# 학습된 모델과 제출 파일은 공개하지 않는다.
+*.zip
+*.joblib
+*.pkl
+*.npy
+*.safetensors
+*.pt
+*.pth
+*.parquet
+submission/model/artifacts.joblib
+submission/model/e5ko/
+submission/model/e5kob/
+submission/wheels/
+
+# 실행 결과와 캐시
+output/
+__pycache__/
+*.pyc
+.pytest_cache/
+catboost_info/
