@@ -11,13 +11,11 @@ DACON [항만 문제해결을 위한 AI 기술 공모전](https://dacon.io/compe
 
 - 참가 1,113명. Private 1위는 0.97931이다.
 - 서버 추론 시간은 12분 36초(제한 30분)이고, 인터넷이 연결되지 않은 환경에서 실행된다.
-- 아래 스크린샷은 2026-11-02 DACON 리더보드와 나의 제출 화면이다.
+- 아래 스크린샷은 2026-11-02 DACON 리더보드 화면이다.
 
 | Public 탭: 15위 0.98395 | Private 탭: 31위 0.95376 |
 |---|---|
 | ![Public 리더보드](results/screenshots/02_public_rank15.jpg) | ![Private 리더보드](results/screenshots/04_private_rank31.jpg) |
-
-![나의 제출: hdeltaB 최종 선택](results/screenshots/05_my_submissions_final_selected.jpg)
 
 전체 결과와 스크린샷 목록: [results/README.md](results/README.md)
 
