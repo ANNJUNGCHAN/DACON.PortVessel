@@ -31,7 +31,7 @@ DACON [항만 문제해결을 위한 AI 기술 공모전](https://dacon.io/compe
 
 ![모델 한눈에 보기](docs/images/model_overview.png)
 
-단계별 상세 도식: [docs/MODEL.md](docs/MODEL.md) (원본 FigJam: <https://www.figma.com/board/7oQbeLVIoMS4t9BKAsl31M>)
+단계별 상세 도식: [docs/MODEL.md](docs/MODEL.md) (원본 FigJam: [이 그림](https://www.figma.com/board/7oQbeLVIoMS4t9BKAsl31M?node-id=11-187), [상세 도식](https://www.figma.com/board/7oQbeLVIoMS4t9BKAsl31M))
 
 ## 폴더 구성
 

@@ -24,3 +24,6 @@ __pycache__/
 *.pyc
 .pytest_cache/
 catboost_info/
+
+# OMC 작업 상태
+.omc/
