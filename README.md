@@ -29,9 +29,25 @@ DACON [항만 문제해결을 위한 AI 기술 공모전](https://dacon.io/compe
 
 ## 모델 한눈에 보기
 
-![모델 한눈에 보기](docs/images/model_overview.png)
+**그림 1.** 기록 한 줄을 배 한 척에 연결하는 8단계 (앞부분 1~4단계, 뒷부분 5~8단계)
 
-단계별 상세 도식: [docs/MODEL.md](docs/MODEL.md) (원본 FigJam: [이 그림](https://www.figma.com/board/7oQbeLVIoMS4t9BKAsl31M?node-id=11-187), [상세 도식](https://www.figma.com/board/7oQbeLVIoMS4t9BKAsl31M))
+![그림 1 앞부분: 1~4단계](docs/images/model_fig1a.png)
+
+![그림 1 뒷부분: 5~8단계](docs/images/model_fig1b.png)
+
+**그림 2.** 한글 채점 모델(그림 1의 4번)을 만든 방법
+
+![그림 2: 한글 채점 모델](docs/images/model_fig2.png)
+
+도식 원본(FigJam): <https://www.figma.com/board/7oQbeLVIoMS4t9BKAsl31M>
+
+핵심 아이디어는 다음과 같다.
+
+1. 비슷한 배 후보를 추리고, 후보마다 이름·톤수·호출부호 등의 비교 값을 계산해 순위 모델로 채점한다.
+2. 이번 최종 모델에서는 한글 이름과 영문 이름을 비교하는 AI(공개 모델 multilingual-e5-small을 추가 학습) 2개의 점수를 더했다.
+3. 새 점수를 넣은 모델로 갈아타지 않고, 새 점수가 만든 **효과만** 검증된 기존 한글 채점 모델에 더했다(쌍둥이 모델의 점수 차이).
+
+자세한 설명: [docs/MODEL.md](docs/MODEL.md)
 
 ## 폴더 구성
 
