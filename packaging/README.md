@@ -1,22 +1,30 @@
-# 패키징
+# 제출 ZIP 만들기
 
-학습된 구성요소를 모아 최종 제출 ZIP을 만드는 스크립트다.
+![재료 3가지를 pack_bag.py로 묶어 제출 ZIP을 만드는 과정](../docs/images/packaging.png)
 
-| 파일 | 내용 |
+학습된 구성요소를 모아 최종 제출 ZIP을 만드는 스크립트다. 재료가 되는 모델 파일은 이 저장소에 없고 원본 작업 저장소에 있다.
+
+```bash
+ARCHIVE=/path/to/DACON.Ship bash packaging/build_twindelta.sh [출력 ZIP 경로]
+```
+
+## 파일
+
+| 파일 | 하는 일 |
 |---|---|
 | `build_twindelta.sh` | 최종 제출 ZIP을 만드는 명령. 원본 작업 저장소 경로(`ARCHIVE`)를 받아 그곳의 모델 파일로 실행한다 |
-| `pack_bag.py` | 기반 패키지의 한글 채점 모델을 `WeightedRanker`로 바꾸고, e5 점수 계산 훅과 인코더 파일을 넣어 새 ZIP을 쓴다 |
-| `bagrank.py` | `WeightedRanker`: 여러 채점 모델 점수의 가중합. ZIP 안에 `rank/bagrank.py`로 들어간다 |
-| `e5feat.py` | 추론 때 이름 비교 AI 점수 4개를 계산한다. ZIP 안에 `rank/e5feat.py`로 들어간다 |
+| `pack_bag.py` | 기반 패키지의 한글 채점 모델을 `WeightedRanker`로 바꾸고, 이름 비교 AI 점수 계산과 AI 파일을 넣어 새 ZIP을 쓴다 |
+| `bagrank.py` | `WeightedRanker`: 여러 채점 모델 점수의 가중합. ZIP 안 `rank/bagrank.py`가 된다 |
+| `e5feat.py` | 추론 때 이름 비교 AI 하나당 점수 4개(AI 2개면 8개)를 계산한다. ZIP 안 `rank/e5feat.py`가 된다 |
 
 ## 만드는 과정
 
-1. 기반 패키지 ZIP을 읽어 그 안의 코드로 `artifacts.joblib`을 불러온다.
+1. 기반 패키지 ZIP을 읽고, 그 안의 코드로 `artifacts.joblib`을 불러온다.
 2. 한글 채점 모델을 아래 가중합으로 바꾼다.
    - 기존 모델 × 1
    - 새 점수 포함 모델 × 0.5, 새 점수 제외 모델 × −0.5 (시드 0,1)
    - 새 점수 포함 모델 × 0.5, 새 점수 제외 모델 × −0.5 (시드 2,3)
-3. `pipeline.py`의 채점 호출 직전에 e5 점수 계산 훅을 넣는다.
-4. 나머지 파일은 바이트 그대로 복사하고, 인코더 폴더(`model/e5ko`, `model/e5kob`)를 더해 ZIP을 쓴다.
+3. `pipeline.py`의 채점 호출 바로 앞에 이름 비교 AI 점수 계산을 끼운다.
+4. 나머지 파일은 바이트 그대로 복사하고, AI 폴더(`model/e5ko`, `model/e5kob`)를 더해 ZIP을 쓴다.
 
-필요한 입력 파일과 해시: [../results/MANIFEST.json](../results/MANIFEST.json). 검증 결과: [../results/rebuild_check.md](../results/rebuild_check.md).
+재료 파일의 해시: [../results/MANIFEST.json](../results/MANIFEST.json) · 검증 결과: [../results/rebuild_check.md](../results/rebuild_check.md)
