@@ -1,6 +1,6 @@
 # 항만 문제해결을 위한 AI 기술 공모전: 최종 제출 모델
 
-DACON [항만 문제해결을 위한 AI 기술 공모전](https://dacon.io/competitions/official/236771/overview/description) (2026-10-12 ~ 2026-11-02)에 팀 **12월부산여행**으로 참가해 최종 선택한 제출(`hdeltaB_e5_e08_noLLM.zip`)의 코드와 문서, 결과 기록이다.
+DACON [항만 문제해결을 위한 AI 기술 공모전](https://dacon.io/competitions/official/236771/overview/description) (2026-10-12 ~ 2026-11-02)에 팀 **12월부산여행**으로 참가해 최종 선택한 모델 **TwinDelta**의 코드와 문서, 결과 기록이다(DACON 제출 파일 `hdeltaB_e5_e08_noLLM.zip`).
 
 ## 최종 결과
 

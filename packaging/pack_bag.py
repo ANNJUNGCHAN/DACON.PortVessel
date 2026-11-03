@@ -28,7 +28,7 @@ CRLF, LF = b"\r\n", "\n"
 
 
 def patch_pipeline(data: bytes, e5: bool, de4: bool, cp: bool) -> bytes:
-    """Insert only the enabled feature hooks (the final hdeltaB ZIP has the e5 hook alone)."""
+    """Insert only the enabled feature hooks (the final TwinDelta ZIP has the e5 hook alone)."""
     crlf = CRLF in data
     s = data.decode("utf-8").replace("\r\n", LF)
     assert s.count(HOOK) == 1, "ranker.predict hook not found exactly once"

@@ -55,7 +55,7 @@ ZIP에서 학습된 모델 파일을 꺼내 `submission/model/` 아래에 두면
 이 저장소에서 원본 작업 저장소 경로를 지정해 실행한다.
 
 ```bash
-ARCHIVE=/path/to/DACON.Ship bash packaging/build_hdeltaB.sh /path/to/hdeltaB_rebuild.zip
+ARCHIVE=/path/to/DACON.Ship bash packaging/build_twindelta.sh /path/to/twindelta_rebuild.zip
 ```
 
 내부적으로 [`packaging/pack_bag.py`](../packaging/pack_bag.py)가 다음 일을 한다.

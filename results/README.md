@@ -1,7 +1,7 @@
-# hdeltaB 최종 결과
+# TwinDelta 최종 결과
 
 대회: DACON 236771 항만 문제해결을 위한 AI 기술 공모전 (선박 입출항 기록 → 선박 카탈로그 매칭)
-팀: 12월부산여행 · 최종 선택 제출: `hdeltaB_e5_e08_noLLM.zip` (DACON 제출 ID 122968, 2026-11-01 01:51:45 KST)
+팀: 12월부산여행 · 최종 선택 모델: TwinDelta (제출 파일 `hdeltaB_e5_e08_noLLM.zip`) (DACON 제출 ID 122968, 2026-11-01 01:51:45 KST)
 확인: 2026-11-02, DACON 리더보드(Public/Private 탭)
 
 ## 점수와 순위

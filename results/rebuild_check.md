@@ -1,6 +1,6 @@
-# hdeltaB 재빌드 검증 (2026-11-02)
+# TwinDelta 재빌드 검증 (2026-11-02)
 
-원본 작업 저장소에서 실행한 명령: `bash final/hdeltaB/build_hdeltaB.sh C:/tmp_rebuild/hdeltaB_rebuild2.zip` (이 저장소의 `packaging/build_hdeltaB.sh`와 같은 내용) (입력은 [MANIFEST.json](MANIFEST.json)의 `build_inputs`와 같다)
+원본 작업 저장소에서 실행한 명령: `bash final/hdeltaB/build_hdeltaB.sh C:/tmp_rebuild/hdeltaB_rebuild2.zip` (이 저장소의 `packaging/build_twindelta.sh`와 같은 명령. 원본 작업 저장소에서는 모델을 hdeltaB라는 작업 이름으로 불렀다) (입력은 [MANIFEST.json](MANIFEST.json)의 `build_inputs`와 같다)
 
 | 검사 | 결과 |
 |---|---|
@@ -25,7 +25,7 @@
 
 ## 이번 정리에서 고친 것
 
-`pack_bag.py`(이 저장소의 `packaging/pack_bag.py`)를 고쳤다. 처음 재빌드한 ZIP은 `model/src/rank/pipeline.py`가 원본과 달랐다. `pack_bag.py`가 hdeltaB에서 쓰지 않는 훅 코드까지 넣었기 때문이다(실행되지는 않지만 바이트가 달라진다). 켜진 옵션의 훅만 넣도록 바꾼 뒤, 재빌드의 `pipeline.py`는 원본과 바이트까지 같다.
+`pack_bag.py`(이 저장소의 `packaging/pack_bag.py`)를 고쳤다. 처음 재빌드한 ZIP은 `model/src/rank/pipeline.py`가 원본과 달랐다. `pack_bag.py`가 TwinDelta에서 쓰지 않는 훅 코드까지 넣었기 때문이다(실행되지는 않지만 바이트가 달라진다). 켜진 옵션의 훅만 넣도록 바꾼 뒤, 재빌드의 `pipeline.py`는 원본과 바이트까지 같다.
 
 ## 스모크 원본 출력
 

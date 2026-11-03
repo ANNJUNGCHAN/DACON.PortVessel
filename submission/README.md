@@ -1,6 +1,6 @@
 # 제출 코드
 
-최종 제출 ZIP `hdeltaB_e5_e08_noLLM.zip`에 들어 있던 추론 코드다. DACON 서버는 ZIP을 풀고 `script.py`를 실행한다.
+최종 모델 TwinDelta의 제출 ZIP `hdeltaB_e5_e08_noLLM.zip`에 들어 있던 추론 코드다. DACON 서버는 ZIP을 풀고 `script.py`를 실행한다.
 
 | 경로 | 내용 |
 |---|---|

@@ -1,6 +1,6 @@
-# 최종 모델 hdeltaB (`hdeltaB_e5_e08_noLLM.zip`)
+# 최종 모델 TwinDelta (제출 파일 `hdeltaB_e5_e08_noLLM.zip`)
 
-DACON 236771 항만 문제해결을 위한 AI 기술 공모전의 최종 선택 제출이다.
+DACON 236771 항만 문제해결을 위한 AI 기술 공모전의 최종 선택 제출이다. 이름은 핵심 아이디어인 "쌍둥이(Twin) 모델의 점수 차이(Delta)"에서 따왔다.
 
 - 제출 ID 122968, 2026-11-01 01:51:45 KST 제출, 팀 12월부산여행
 - **Public 0.98395 (15위), Private 0.95376 (31위, 최종)**: 자세한 내용은 [../results/README.md](../results/README.md)
@@ -30,7 +30,7 @@ test 행 ─► 후보 생성 (톤수 창·음역·음성 키·단어 색인·�
 - 마지막 교체 단계는 한글 행에서 이름 비교 인코더 세 개의 코사인 합이 1위 후보보다 훨씬 높은 후보가 있으면 그 후보로 바꾼다(`submission/model/src/rank/submission_variant.py`).
 - 각 test 행은 다른 test 행을 참조하지 않는다(행 독립성: 정순·역순·부분집합 실행 결과가 같음을 스모크로 확인).
 
-hdeltaB에서 새로 만든 것은 한글 랭커와 e5·e5b 인코더다. 코드로는 다음과 같다.
+TwinDelta에서 새로 만든 것은 한글 랭커와 e5·e5b 인코더다. 코드로는 다음과 같다.
 
 - `pipeline.py`의 랭커 호출 직전에 넣은 e5 특징 훅 한 곳
 - 추가 파일: `bagrank.py`, `e5feat.py`, e5·e5b 인코더 폴더

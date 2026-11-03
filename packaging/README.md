@@ -4,7 +4,7 @@
 
 | 파일 | 내용 |
 |---|---|
-| `build_hdeltaB.sh` | 최종 제출 ZIP을 만드는 명령. 원본 작업 저장소 경로(`ARCHIVE`)를 받아 그곳의 모델 파일로 실행한다 |
+| `build_twindelta.sh` | 최종 제출 ZIP을 만드는 명령. 원본 작업 저장소 경로(`ARCHIVE`)를 받아 그곳의 모델 파일로 실행한다 |
 | `pack_bag.py` | 기반 패키지의 한글 채점 모델을 `WeightedRanker`로 바꾸고, e5 점수 계산 훅과 인코더 파일을 넣어 새 ZIP을 쓴다 |
 | `bagrank.py` | `WeightedRanker`: 여러 채점 모델 점수의 가중합. ZIP 안에 `rank/bagrank.py`로 들어간다 |
 | `e5feat.py` | 추론 때 이름 비교 AI 점수 4개를 계산한다. ZIP 안에 `rank/e5feat.py`로 들어간다 |
