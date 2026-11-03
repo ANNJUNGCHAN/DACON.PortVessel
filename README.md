@@ -57,7 +57,7 @@ DACON [항만 문제해결을 위한 AI 기술 공모전](https://dacon.io/compe
 | [`packaging/`](packaging/) | 학습된 구성요소를 모아 제출 ZIP을 만드는 스크립트 |
 | [`training/`](training/) | 한글-영문 이름 비교 AI 학습과 쌍둥이 채점 모델 학습 스크립트(참고용) |
 | [`samples/`](samples/) | 대회 데이터 형식을 보여 주는 **가상** 예시 데이터 |
-| [`results/`](results/) | 점수 스크린샷, 리더보드 기록, 제출 목록, 해시 목록, 재빌드 검증 |
+| [`results/`](results/) | 점수 스크린샷, 리더보드 기록, 해시 목록, 재빌드 검증 |
 | [`docs/`](docs/) | 모델 설명, 재현 방법, 대회 규정 준수 |
 
 ## 실행 방법 (요약)

@@ -34,6 +34,6 @@
 | `build_full.py` | 전체 학습 데이터로 정답·오답 후보 묶음(학습 파트) 5개를 만든다: 실제 기록, 합성 3종, 노이즈 사본 |
 | `run_ablation.py` | `build_full.py`가 쓰는 후보·비교 값 생성 도구 |
 | `e5parts.py` | 학습 파트에 이름 비교 점수를 붙인다. 대상 선박이 속한 fold의 인코더로 계산해, 학습에 쓴 선박을 스스로 평가하는 누수를 막는다 |
-| `fit_full.py` | LightGBM 순위 모델(`lgb_colbag_de3`)을 학습한다. 새 점수 포함·제외 × 시드 2쌍 = 4개 |
+| `fit_full.py` | 기존 한글 랭커와 같은 레시피로 LightGBM 순위 모델을 학습한다. 새 점수 포함·제외 × 시드 2쌍 = 4개 |
 
 실행 순서와 명령: [../docs/REPRODUCE.md](../docs/REPRODUCE.md)
